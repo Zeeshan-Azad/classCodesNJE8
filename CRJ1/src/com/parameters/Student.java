@@ -9,6 +9,7 @@ public class Student {
 	long uid;
 	long studentEnrollmentValue;
 	int feesDue;
+	String almirahNumber;
 	
 	void showDetails() {
 		System.out.println(this.name);
