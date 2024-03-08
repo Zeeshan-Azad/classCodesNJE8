@@ -1,8 +1,0 @@
-package com.typecasting;
-
-public class AnimalTreatmentCentre {
-	
-	public static void admitAnimal(Animal a) { 
-		
-	}
-}

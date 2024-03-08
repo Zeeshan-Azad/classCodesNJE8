@@ -1,8 +1,0 @@
-package com.banking;
-
-public class TestBanking {
-	public static void main(String[] args) {
-		
-		ICICI i1 = new ICICI();
-	}
-}
