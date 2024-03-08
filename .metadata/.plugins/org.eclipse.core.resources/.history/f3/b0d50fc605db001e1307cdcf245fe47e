@@ -1,0 +1,26 @@
+package com.inheritance;
+
+public class TestUpcasting {
+	public static void main(String[] args) {
+		
+		//upcasting
+		Vehicle v = new Car();
+		
+		//can access general properties
+		v.isElectric = false;
+		v.numberWheels = 4;
+		v.vehicleType = "Car";
+		v.showDetails();
+		
+		
+		//upcasting
+		Vehicle v1 = new Bike();
+		v1.isElectric = false;
+		v1.numberWheels = 2;
+		v1.vehicleType = "Motor bike";
+		
+		//specific properties cannot be accessed using upcasted reference
+		//v.carBrand = "Ford";
+		
+	}
+}

@@ -1,0 +1,43 @@
+package com.inheritance;
+
+import java.util.Scanner;
+
+public class TestUpcasting {
+	public static void main(String[] args) {
+		
+		//upcasting
+		Vehicle v = new Car();  //car object is upcasted into Vehicle reference
+		
+		//can access general properties
+		v.isElectric = false;
+		v.numberWheels = 4;
+		v.vehicleType = "Car";
+		v.cc = 1500;
+		v.showDetails();
+		
+		
+		//upcasting
+		Vehicle v1 = new Bike(); //Bike object is upcasted into Vehicle reference
+		v1.isElectric = false;
+		v1.numberWheels = 2;
+		v1.vehicleType = "Motor bike";
+		v1.cc = 200;
+		
+		//specific properties cannot be accessed using upcasted reference
+		//v.carBrand = "Ford";
+		
+		OfficeParking.parkVehicle(v);
+		OfficeParking.parkVehicle(v1);
+		
+		
+		//v and v1 has child class objects
+		
+		Car c = (Car)v;  //downcasting of the car object into its own class reference
+		
+		Bike b = (Bike)v1; //dowcasting of the bike object into its own class reference
+		
+
+		
+		
+	}
+}

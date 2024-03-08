@@ -1,0 +1,16 @@
+package com.typecasting;
+
+public class AnimalTreatmentCentre {
+	
+	public static void admitAnimal(Animal a) { 
+		//Animal a = new Dog();
+		
+		//specific property chaiye
+		//downcast krke
+		
+		Dog d = (Dog)a;
+		d.breed = "GS";
+		d.bark();
+		
+	}
+}

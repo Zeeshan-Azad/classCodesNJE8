@@ -1,0 +1,32 @@
+package com.inheritance;
+
+public class OfficeParking {
+	String parkingName;
+	
+	
+	public static void parkVehicle(Vehicle v) {
+		
+		if( v instanceof Car) {
+			System.out.println("This is a car");
+			if(v.cc >= 1500) {
+				System.out.println("money to give --> 500");
+				v.showDetails();
+			}
+			else {
+				System.out.println("money to give --> 300");
+			}
+		}
+		else {
+			System.out.println("This is a bike");
+			if(v.cc >= 150) {
+				System.out.println("money to give --> 100");
+				v.showDetails();
+			}
+			else {
+				System.out.println("money to give --> 80");
+			}
+		}
+	}
+	
+	
+}

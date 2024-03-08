@@ -1,0 +1,18 @@
+package com.inheritance;
+
+public class TestUpcasting {
+	public static void main(String[] args) {
+		
+		//upcasting
+		Vehicle v = new Car();
+		
+		//can access general properties
+		v.isElectric = false;
+		v.numberWheels = 4;
+		v.vehicleType = "Car";
+		v.showDetails();
+		
+		v.carBrand = "Ford";
+		
+	}
+}

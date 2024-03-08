@@ -1,0 +1,26 @@
+package com.inheritance;
+
+public class OfficeParking {
+	String parkingName;
+	
+	
+	public static void parkVehicle(Vehicle v) {
+		
+		if( v instanceof Car) {
+			System.out.println("This is a car");
+			
+			Car c = (Car)v;
+			c.display();
+			
+		}
+		else {
+			System.out.println("This is a bike");
+			
+			Bike b = (Bike)v;
+			b.display();
+			
+		}
+	}
+	
+	
+}

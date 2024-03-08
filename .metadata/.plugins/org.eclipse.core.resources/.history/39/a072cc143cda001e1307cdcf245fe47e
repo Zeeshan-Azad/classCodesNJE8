@@ -1,0 +1,14 @@
+package com.inheritance;
+
+public class TestUpcasting {
+	public static void main(String[] args) {
+		
+		//upcasting
+		Vehicle v = new Car();
+		v.isElectric = false;
+		v.numberWheels = 4;
+		v.vehicleType = "Car";
+		v.showDetails();
+		
+	}
+}

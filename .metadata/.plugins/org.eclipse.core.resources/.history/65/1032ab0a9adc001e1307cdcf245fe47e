@@ -1,0 +1,18 @@
+package com.banking;
+
+public class SBI extends Bank{
+
+	public SBI() {
+		super();
+	}
+
+	public SBI(String accountHolderName, String bankName, long accountNumber, long mobileNumber, int balanceAmount,
+			int pin, long uid) {
+		super(accountHolderName, bankName, accountNumber, mobileNumber, balanceAmount, pin, uid);
+	}
+
+	public SBI(String accountHolderName, String bankName, long accountNumber, long mobileNumber, long uid) {
+		super(accountHolderName, bankName, accountNumber, mobileNumber, uid);
+	}
+	//specific methods
+}

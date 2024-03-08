@@ -1,0 +1,13 @@
+package com.inheritance;
+
+public class TestUpcasting {
+	public static void main(String[] args) {
+		
+		//upcasting
+		Vehicle v = new Car();
+		Vehicle vv = new PetrolCar();
+		Car c = new PetrolCar();
+		
+		//Car c = new Employee();
+	}
+}

@@ -1,0 +1,10 @@
+package com.typecasting;
+
+public class AnimalBeareu {
+	public static void main(String[] args) {
+		
+		Animal a = new Dog();
+		
+		
+	}
+}

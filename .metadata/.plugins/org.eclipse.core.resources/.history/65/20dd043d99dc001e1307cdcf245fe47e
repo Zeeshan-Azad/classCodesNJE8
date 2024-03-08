@@ -1,0 +1,29 @@
+package com.banking;
+
+import java.util.Scanner;
+
+public class ATM {
+	public static void swipeCard(Bank b) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter what you want to do");
+		int input = sc.nextInt();
+		
+		if(input==1) {
+			System.out.println("Your are going to withdraw");
+			System.out.println("Enter account number");
+			long account = sc.nextLong();
+			
+			System.out.println("Enter pin");
+			int pin = sc.nextInt();
+			
+			System.out.println("Enter amount");
+			int amount = sc.nextInt();
+			
+			b.withdraw(account, pin, amount);
+		}
+		
+		else if(input==2) {
+			System.out.println("You want to check Balance");
+		}
+	}
+}

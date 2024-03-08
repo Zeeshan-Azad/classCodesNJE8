@@ -1,0 +1,9 @@
+package com.inheritance;
+
+public class OfficeParking {
+	String parkingName;
+	
+	public static void parkVehicle(Vehicle v) {
+		
+	}
+}

@@ -1,0 +1,7 @@
+package com.inheritance;
+
+public class Bike extends Vehicle{
+	String bikeBrand;
+	int cc;
+	double hp;
+}
